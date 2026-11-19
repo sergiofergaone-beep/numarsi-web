@@ -1,0 +1,3 @@
+# Propuesta académica: no indexar
+User-agent: *
+Disallow: /

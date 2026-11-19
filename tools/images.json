@@ -1,0 +1,106 @@
+{
+ "linea-corte": {
+  "w": 1920,
+  "h": 1080,
+  "widths": [
+   480,
+   960,
+   1440
+  ]
+ },
+ "linea-sierras": {
+  "w": 1830,
+  "h": 1030,
+  "widths": [
+   480,
+   960,
+   1440
+  ]
+ },
+ "pescado-congelado": {
+  "w": 1920,
+  "h": 1080,
+  "widths": [
+   480,
+   960,
+   1440
+  ]
+ },
+ "maquina-envasado": {
+  "w": 1920,
+  "h": 1080,
+  "widths": [
+   480,
+   960,
+   1440
+  ]
+ },
+ "puestos-preparacion": {
+  "w": 1920,
+  "h": 1080,
+  "widths": [
+   480,
+   960,
+   1440
+  ]
+ },
+ "linea-envasado": {
+  "w": 1920,
+  "h": 1080,
+  "widths": [
+   480,
+   960,
+   1440
+  ]
+ },
+ "puestos-limpieza": {
+  "w": 1920,
+  "h": 1080,
+  "widths": [
+   480,
+   960,
+   1440
+  ]
+ },
+ "planta-aerea": {
+  "w": 1920,
+  "h": 1080,
+  "widths": [
+   480,
+   960,
+   1440
+  ]
+ },
+ "fachada-muelles": {
+  "w": 1920,
+  "h": 1080,
+  "widths": [
+   480,
+   960,
+   1440
+  ]
+ },
+ "cartel-numarsi": {
+  "w": 1920,
+  "h": 1080,
+  "widths": [
+   480,
+   960,
+   1440
+  ]
+ },
+ "equipo-planta": {
+  "w": 457,
+  "h": 477,
+  "widths": [
+   457
+  ]
+ },
+ "control-calidad": {
+  "w": 457,
+  "h": 479,
+  "widths": [
+   457
+  ]
+ }
+}

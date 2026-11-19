@@ -1,0 +1,4 @@
+_origen/
+entregables/
+tools/__pycache__/
+tools/_tmp_*
