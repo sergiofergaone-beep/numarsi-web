@@ -8,6 +8,122 @@
    1440
   ]
  },
+ "web-filete": {
+  "w": 550,
+  "h": 620,
+  "widths": [
+   480,
+   550
+  ]
+ },
+ "web-calamar": {
+  "w": 1092,
+  "h": 1080,
+  "widths": [
+   480,
+   960,
+   1092
+  ]
+ },
+ "web-calamar-bandeja": {
+  "w": 551,
+  "h": 491,
+  "widths": [
+   480,
+   551
+  ]
+ },
+ "web-sierras": {
+  "w": 550,
+  "h": 614,
+  "widths": [
+   480,
+   550
+  ]
+ },
+ "web-iqf": {
+  "w": 550,
+  "h": 546,
+  "widths": [
+   480,
+   550
+  ]
+ },
+ "web-barquetas": {
+  "w": 549,
+  "h": 500,
+  "widths": [
+   480,
+   549
+  ]
+ },
+ "web-langostinos": {
+  "w": 550,
+  "h": 773,
+  "widths": [
+   480,
+   550
+  ]
+ },
+ "web-porcionado": {
+  "w": 551,
+  "h": 500,
+  "widths": [
+   480,
+   551
+  ]
+ },
+ "web-linea-calamar": {
+  "w": 552,
+  "h": 501,
+  "widths": [
+   480,
+   552
+  ]
+ },
+ "web-embalaje": {
+  "w": 1024,
+  "h": 683,
+  "widths": [
+   480,
+   960,
+   1024
+  ]
+ },
+ "web-control": {
+  "w": 551,
+  "h": 500,
+  "widths": [
+   480,
+   551
+  ]
+ },
+ "web-edificio": {
+  "w": 750,
+  "h": 500,
+  "widths": [
+   480,
+   750
+  ]
+ },
+ "web-fachada": {
+  "w": 1920,
+  "h": 1080,
+  "widths": [
+   480,
+   960,
+   1440
+  ]
+ },
+ "web-filete-mano": {
+  "w": 1080,
+  "h": 699,
+  "widths": [
+   480,
+   960,
+   1080
+  ]
+ },
  "linea-sierras": {
   "w": 1830,
   "h": 1030,

@@ -23,7 +23,7 @@ TX = {
    who=[("No comercializamos","Solo vendemos servicios: no competimos con nuestros clientes."),("Especialistas","Todo nuestro tiempo, dedicado a las necesidades de producción de cada cliente."),("Calidad","Departamento de Calidad con controles en todo el proceso.")],
    facts=[("2011","fundación"),("2","plantas · 3.500 m²"),("+180","personas"),("4 t/h","congelación IQF")],
    s_title="Servicios", f_title="Formatos de envasado", p_title="Cómo trabajamos",
-   steps=["Recepción y control de la materia prima","Proceso a medida: fileteado, limpieza o corte","Congelación IQF y glaseo","Envasado en el tamaño y formato elegidos","Control y liberación por Calidad","Almacenamiento en frío y expedición"],
+   steps=["Recepción y control de la materia prima","Proceso a medida: fileteado, limpieza o corte","Congelación IQF y glaseo","Envasado en el formato elegido, con tu marca","Control y liberación por Calidad","Almacenamiento en frío y expedición"],
    c_title="Calidad certificada", certs="IFS Food · MSC · ASC · Friend of the Sea", conf="Servicios adicionales: almacenamiento en frío, escandallos y muestras comerciales a medida. Confidencialidad sobre los productos y especificaciones de cada cliente.",
    cta="Hablemos de tu producción", contact="info@numarsi.com · +34 986 090 189 · O Campiño, Pontevedra",
    foot="Nuestro Mar de Siempre, S.L. · www.numarsi.com", page="Página"),
@@ -32,7 +32,7 @@ TX = {
    who=[("We don’t sell products","We only sell services: we never compete with our clients."),("Specialists","All our time devoted to each client’s production needs."),("Quality","A Quality Department checking the whole process.")],
    facts=[("2011","founded"),("2","plants · 3,500 m²"),("180+","people"),("4 t/h","IQF freezing")],
    s_title="Services", f_title="Packing formats", p_title="How we work",
-   steps=["Raw material intake and checks","Tailor-made processing: filleting, cleaning or cutting","IQF freezing and glazing","Packing in the chosen size and format","Quality checks and release","Cold storage and dispatch"],
+   steps=["Raw material intake and checks","Tailor-made processing: filleting, cleaning or cutting","IQF freezing and glazing","Packing in the chosen format, under your brand","Quality checks and release","Cold storage and dispatch"],
    c_title="Certified quality", certs="IFS Food · MSC · ASC · Friend of the Sea", conf="Additional services: cold storage, yield analysis and tailor-made commercial samples. Confidentiality for each client’s products and specifications.",
    cta="Let’s talk about your production", contact="info@numarsi.com · +34 986 090 189 · Pontevedra, Galicia, Spain",
    foot="Nuestro Mar de Siempre, S.L. · www.numarsi.com", page="Page"),
@@ -55,8 +55,10 @@ def footer(c, t, n):
 
 def photo(c, name, x, y, w, h):
     from PIL import Image as PI
-    src = os.path.join(IMG, f"{name}-960.webp")
-    if not os.path.exists(src): src = os.path.join(IMG, f"{name}-457.webp")
+    import json as _j
+    _w = _j.load(open(os.path.join(ROOT, "tools", "images.json")))[name]["widths"]
+    _w = [w for w in _w if w <= 960] or _w
+    src = os.path.join(IMG, f"{name}-{max(_w)}.webp")
     jpg = os.path.join(ROOT, "tools", "_tmp_" + name + ".jpg")
     PI.open(src).convert("RGB").save(jpg, "JPEG", quality=78)
     im = ImageReader(jpg)
@@ -70,7 +72,7 @@ def build(lang):
     c.setTitle(f'Numarsi — {t["sub"]}'); c.setAuthor("Numarsi"); c.setSubject(t["claim"])
     # ---- Página 1: portada
     c.setFillColorRGB(*NAVY); c.rect(0, H - 430, W, 430, stroke=0, fill=1)
-    photo(c, "linea-corte", W * 0.6, H - 400, W * 0.4 - M, 330)
+    photo(c, "web-linea-calamar", W * 0.6, H - 400, W * 0.4 - M, 330)
     c.drawImage(os.path.join(IMG, "numarsi-logo-blanco.png"), M, H - 140, 164, 100, mask="auto")
     c.setFillColorRGB(.56, .83, .96); c.setFont("SB", 10); c.drawString(M, H - 170, t["sub"].upper())
     y = H - 205
@@ -89,8 +91,8 @@ def build(lang):
         x = M + i * ((W - 2 * M) / 4)
         c.setFillColorRGB(*NAVY); c.setFont("SB", 26); c.drawString(x, y, a)
         c.setFillColorRGB(*MUTED); c.setFont("S", 10); c.drawString(x, y - 16, b)
-    photo(c, "linea-envasado", M, 50, (W - 2 * M) / 2 - 6, 150)
-    photo(c, "planta-aerea", W / 2 + 6, 50, (W - 2 * M) / 2 - 6, 150)
+    photo(c, "web-barquetas", M, 50, (W - 2 * M) / 2 - 6, 150)
+    photo(c, "web-calamar", W / 2 + 6, 50, (W - 2 * M) / 2 - 6, 150)
     footer(c, t, 1); c.showPage()
     # ---- Página 2: servicios + formatos
     c.setFillColorRGB(*NAVY); c.setFont("SB", 22); c.drawString(M, H - 70, t["s_title"])
@@ -109,7 +111,7 @@ def build(lang):
         c.setFillColorRGB(*SKY); c.circle(x + 20, y - 22, 8, stroke=0, fill=1)
         c.setFillColorRGB(*NAVY); c.setFont("SB", 10.5); c.drawString(x + 10, y - 48, n)
         wrap(c, d, x + 10, y - 64, bw - 26, size=8.6, lead=11.5, color=MUTED)
-    photo(c, "linea-corte", M, 50, W - 2 * M, y - 140 - 50)
+    photo(c, "web-sierras", M, 50, W - 2 * M, y - 140 - 50)
     footer(c, t, 2); c.showPage()
     # ---- Página 3: proceso cefalópodo, calidad, contacto
     c.setFillColorRGB(*NAVY); c.setFont("SB", 22); c.drawString(M, H - 70, t["p_title"])
@@ -120,7 +122,7 @@ def build(lang):
         c.setFillColorRGB(1, 1, 1); c.setFont("SB", 11); c.drawCentredString(M + 12, y, str(i))
         c.setFillColorRGB(*INK); c.setFont("S", 11.5); c.drawString(M + 34, y, s)
         y -= 34
-    photo(c, "puestos-limpieza", W / 2 + 20, H - 330, W / 2 - M - 20, 220)
+    photo(c, "web-embalaje", W / 2 + 20, H - 330, W / 2 - M - 20, 220)
     y -= 10
     c.setFillColorRGB(*SOFT); c.roundRect(M, y - 120, W - 2 * M, 120, 10, stroke=0, fill=1)
     c.setFillColorRGB(*NAVY); c.setFont("SB", 15); c.drawString(M + 18, y - 30, t["c_title"])

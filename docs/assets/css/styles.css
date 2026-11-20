@@ -276,3 +276,16 @@ label.check input{width:auto;margin-top:5px}
 .pack-item h3{font-size:1.05rem;margin:0 0 .2em}
 .pack-item p{margin:0;color:var(--muted);font-size:.95rem}
 @media (prefers-reduced-motion:reduce){.card-photo .card-media img{transition:none}}
+
+.steps.steps-1{grid-template-columns:1fr}
+
+.pack-list{align-content:center}
+.pack-split{align-items:center}
+
+.video-card{margin:0}
+.video-card video{width:100%;aspect-ratio:16/9;background:#000;border-radius:var(--radius);box-shadow:0 20px 40px rgba(0,0,0,.35)}
+.video-card figcaption{margin-top:10px;color:#c4d4e6;font-size:.95rem}
+.video-card strong{color:#fff}
+@media (min-width:640px){.grid.g2{grid-template-columns:repeat(2,1fr)}}
+
+.gallery .photo{aspect-ratio:4/3}

@@ -61,61 +61,61 @@ def certs(c):
 
 SERV = {
  "es": [
-  ("fillet","fileteado","Fileteado y pelado de pescado","puestos-preparacion","Operarias trabajando en los puestos de preparación de la planta de Numarsi",
+  ("fillet","fileteado","Fileteado y pelado de pescado","web-filete","Filete de pescado limpio y pelado",
    "Trabajamos a partir de dos tipos de materia prima. El respeto por la materia prima, la precisión y la meticulosidad son nuestros puntos fuertes.",
-   ["Desde pescado entero descabezado y eviscerado (HG): fileteado, o fileteado y pelado","Desde filete fresco o congelado IQF: pelado"]),
-  ("squid","cefalopodos","Limpieza, eviscerado y tratamiento de cefalópodos","equipo-planta","Operaria con equipo de protección junto a una caja de producto en la planta",
+   ["Desde pescado entero descabezado y eviscerado (HG): fileteado, o fileteado y pelado","Desde filete fresco o congelado IQF: pelado","Calibrado y control según la especificación de cada cliente"]),
+  ("squid","cefalopodos","Limpieza, eviscerado y tratamiento de cefalópodos","web-calamar","Calamares limpios en la línea de cefalópodo",
    "Contamos con una línea específica para el eviscerado y su posterior troceado en anillas.",
-   ["Línea específica de eviscerado y troceado en anillas","Salas refrigeradas para realizar los tratamientos que se requieran","Almacenamiento posterior"]),
-  ("cut","corte","Corte en diferentes tamaños y formas","linea-sierras","Línea de corte con sierras y porciones de pescado sobre la cinta transportadora",
+   ["Línea propia de eviscerado y limpieza","Troceado en anillas, tiras y otros cortes","Salas refrigeradas para realizar los tratamientos que se requieran","Almacenamiento posterior en frío"]),
+  ("cut","corte","Corte en diferentes tamaños y formas","web-sierras","Línea de corte con sierras y porciones de pescado sobre la cinta",
    "Realizamos una gran variedad de cortes, tanto en forma como en tamaño, con un equipo humano altamente cualificado y equipos automáticos.",
-   ["Medallones, rodajas, taquitos y tiras, entre otros","Porcionado automático a partir de bloques de pescado","Gran variedad de formas y tamaños"]),
-  ("snow","congelacion","Congelación IQF y glaseado","pescado-congelado","Caja con pescado congelado junto a la línea de producción",
+   ["Medallones, rodajas, taquitos y tiras, entre otros","Porcionado automático a partir de bloques de pescado","Tamaños y gramajes a medida"]),
+  ("snow","congelacion","Congelación IQF y glaseado","web-iqf","Piezas de producto sobre la malla del túnel de congelación IQF",
    "Disponemos de dos túneles dinámicos de congelación y otros dos de secado, con una capacidad de 4 t/h, en los que realizamos la congelación y el glaseo.",
-   ["Dos túneles dinámicos de congelación y dos de secado","Capacidad de 4 toneladas por hora","Congelación y glaseo","Túneles distribuidos estratégicamente en la fábrica para una mayor eficiencia global del proceso"]),
-  ("box","envasado","Envasado en distintos tamaños y formatos","linea-envasado","Línea de envasado con pesadora multicabezal y operarias preparando cajas",
-   "Envasamos en el tamaño y el formato que necesita cada cliente.",
+   ["Dos túneles dinámicos de congelación y dos de secado","Capacidad de 4 toneladas por hora","Glaseo con porcentaje controlado","Túneles distribuidos estratégicamente en la fábrica para una mayor eficiencia global del proceso"]),
+  ("box","envasado","Envasado en distintos tamaños y formatos","web-barquetas","Langostinos envasados en barquetas avanzando por la línea de envasado",
+   "Envasamos en el formato y el tamaño que necesita cada cliente, con su marca y su etiquetado.",
    ["Embolsado","Doble piel","Envasado al vacío","Estuchado","A granel"]),
  ],
  "en": [
-  ("fillet","filleting","Fish filleting and skinning","puestos-preparacion","Operators working at the preparation stations in the Numarsi plant",
+  ("fillet","filleting","Fish filleting and skinning","web-filete","Clean, skinned fish fillet",
    "We work from two kinds of raw material. Respect for the raw material, precision and meticulous work are our strengths.",
-   ["From headed and gutted (HG) fish: filleting, or filleting and skinning","From fresh or IQF fillets: skinning"]),
-  ("squid","cephalopods","Cephalopod cleaning, gutting and treatment","equipo-planta","Operator in protective clothing next to a crate of product in the plant",
+   ["From headed and gutted (HG) fish: filleting, or filleting and skinning","From fresh or IQF fillets: skinning","Grading and checks to each client’s specification"]),
+  ("squid","cephalopods","Cephalopod cleaning, gutting and treatment","web-calamar","Cleaned squid on the cephalopod line",
    "We have a dedicated line for gutting and then cutting into rings.",
-   ["Dedicated line for gutting and cutting into rings","Chilled rooms for any treatments required","Subsequent storage"]),
-  ("cut","cutting","Cutting in different sizes and shapes","linea-sierras","Cutting line with band saws and fish portions on the conveyor",
+   ["Dedicated gutting and cleaning line","Rings, strips and other cuts","Chilled rooms for any treatments required","Subsequent cold storage"]),
+  ("cut","cutting","Cutting in different sizes and shapes","web-sierras","Cutting line with band saws and fish portions on the belt",
    "We offer a wide range of cuts, in both shape and size, with a highly skilled team and automatic equipment.",
-   ["Medallions, steaks, cubes and strips, among others","Automatic portioning from fish blocks","A wide variety of shapes and sizes"]),
-  ("snow","freezing","IQF freezing and glazing","pescado-congelado","Crate of frozen fish next to the production line",
+   ["Medallions, steaks, cubes and strips, among others","Automatic portioning from fish blocks","Sizes and weights to order"]),
+  ("snow","freezing","IQF freezing and glazing","web-iqf","Product pieces on the mesh belt of the IQF freezing tunnel",
    "We have two dynamic freezing tunnels and two drying tunnels with a capacity of 4 t/h, where we freeze and glaze.",
-   ["Two dynamic freezing tunnels and two drying tunnels","Capacity of 4 tonnes per hour","Freezing and glazing","Tunnels strategically placed in the plant for greater overall efficiency"]),
-  ("box","packing","Packing in different sizes and formats","linea-envasado","Packing line with a multihead weigher and operators preparing boxes",
-   "We pack in the size and format each client needs.",
+   ["Two dynamic freezing tunnels and two drying tunnels","Capacity of 4 tonnes per hour","Glazing at a controlled percentage","Tunnels strategically placed in the plant for greater overall efficiency"]),
+  ("box","packing","Packing in different sizes and formats","web-barquetas","Prawns packed in trays moving along the packing line",
+   "We pack in the format and size each client needs, with their brand and labelling.",
    ["Bags","Double skin","Vacuum packs","Cartons","Bulk"]),
  ]}
 
 PACKS = {
- "es":[("bag","Embolsado","Producto en bolsa, en distintos tamaños."),("skin","Doble piel","Envase con film ajustado al producto."),
-       ("vacuum","Envasado al vacío","Producto envasado al vacío."),("carton","Estuchado","Producto en estuche de cartón."),
-       ("bulk","A granel","Producto a granel.")],
- "en":[("bag","Bags","Product in bags, in different sizes."),("skin","Double skin","Pack with film fitted to the product."),
-       ("vacuum","Vacuum packs","Vacuum-packed product."),("carton","Cartons","Product in a cardboard carton."),
-       ("bulk","Bulk","Bulk product.")]}
+ "es":[("bag","Embolsado","Bolsas de distintos tamaños, desde formatos de venta al público hasta varios kilos."),("skin","Doble piel","Film ajustado al producto para una presentación cuidada en el lineal."),
+       ("vacuum","Envasado al vacío","Mayor protección del producto y mejor conservación."),("carton","Estuchado","Estuches de cartón listos para la venta."),
+       ("bulk","A granel","Cajas máster para industria y hostelería.")],
+ "en":[("bag","Bags","Bags in different sizes, from retail packs to several kilos."),("skin","Double skin","Film moulded to the product for a neat shelf presentation."),
+       ("vacuum","Vacuum packs","Extra protection and better preservation."),("carton","Cartons","Retail-ready cardboard cartons."),
+       ("bulk","Bulk","Master cases for industry and food service.")]}
 
 EXTRA = {
- "es": [("snowbox","Almacenamiento en frío","Almacenamos en frío el producto de nuestros clientes."),
-        ("chart","Escandallos","Realizamos escandallos de la materia prima de nuestros clientes."),
+ "es": [("snowbox","Almacenamiento en frío","Cámaras de conservación para guardar el producto antes y después del proceso."),
+        ("chart","Escandallos","Cálculo de rendimientos y costes por proceso para que conozcas el resultado real de tu materia prima."),
         ("lab","Muestras a medida","Preparamos muestras comerciales según tu especificación antes de lanzar la producción.")],
- "en": [("snowbox","Cold storage","We provide cold storage for our clients’ products."),
-        ("chart","Yield analysis","We carry out yield analyses (escandallos) of our clients’ raw material."),
+ "en": [("snowbox","Cold storage","Cold rooms to store product before and after processing."),
+        ("chart","Yield analysis","Yield and cost calculations per process so you know the real result of your raw material."),
         ("lab","Tailor-made samples","We prepare commercial samples to your specification before production starts.")]}
 
 def pack_grid(c):
     L = c["lang"]
-    alt = {"es":"Máquina de cierre de cajas en la línea de envasado de Numarsi","en":"Box sealing machine on the Numarsi packing line"}[L]
+    alt = {"es":"Langostinos en barquetas en la línea de envasado de Numarsi","en":"Prawns in trays on the Numarsi packing line"}[L]
     cards = "".join(f'<li class="pack-item reveal"><h3>{n}</h3><p>{d}</p></li>' for k, n, d in PACKS[L])
-    return f'<div class="split pack-split"><div class="photo reveal">{c["pic"]("maquina-envasado", alt, "(min-width: 900px) 45vw, 100vw")}</div><ul class="pack-list">{cards}</ul></div>'
+    return f'<div class="split pack-split"><div class="photo reveal">{c["pic"]("web-langostinos", alt, "(min-width: 900px) 45vw, 100vw")}</div><ul class="pack-list">{cards}</ul></div>'
 
 def extra_grid(c):
     return '<div class="grid g3">' + "".join(
@@ -170,28 +170,28 @@ def home(c):
             h1="Especialistas en la elaboración de productos del mar",
             lead="Elaboramos productos del mar congelados para que nuestros clientes lleguen al consumidor con el mejor producto. Nos adaptamos a las necesidades de cada uno, manteniendo la calidad de su materia prima.",
             facts=["Solo vendemos servicios","Certificación IFS Food","Desde 2011"],
-            alt="Línea de corte de Numarsi con porciones de pescado congelado sobre la cinta",
+            alt="Operaria de Numarsi trabajando en la línea de cefalópodo",
             serv=("Qué hacemos", "Realizamos una parte del proceso o el producto completo: de la materia prima al producto congelado y envasado."),
             all_serv="Ver todos los servicios",
             why=("Nuestro valor diferencial", "Una empresa de servicios que complementa los procesos productivos de sus clientes y forma parte de su cadena de valor."),
-            adapt=("Nos adaptamos a cada cliente", "Cada cliente tiene su especificación, su marca y su mercado. Trabajamos con tu materia prima, con el corte y el formato que necesitas, y guardamos la confidencialidad de tus productos.",
-                   ["Procesos a medida, desde un servicio hasta el producto terminado","Envasado en el tamaño y el formato que necesites","Muestras comerciales antes de producir","Confidencialidad sobre tus productos y especificaciones"]),
+            adapt=("Nos adaptamos a cada cliente", "Cada cliente tiene su especificación, su marca y su mercado. Trabajamos con tu materia prima y con el corte, el gramaje y el formato que necesitas, y guardamos la confidencialidad de tus productos.",
+                   ["Procesos a medida, desde un servicio hasta el producto terminado","Envasado con tu marca y en el formato que elijas","Muestras comerciales antes de producir","Confidencialidad sobre tus productos y especificaciones"]),
             cert=("Calidad certificada", "Un Departamento de Calidad propio aplica controles rigurosos en todo el proceso productivo."),
-            fac=("Nuestras instalaciones", "Dos fábricas en Pontevedra que suman 3.500 m², con líneas de fileteado, cefalópodo, corte, congelación IQF y envasado.", "Conoce las instalaciones"),
+            fac=("Nuestras instalaciones", "Dos fábricas en Pontevedra que suman 3.500 m², con líneas de fileteado, cefalópodo, corte, congelación IQF y envasado.", "Conoce las instalaciones y míralas en vídeo"),
             cta=("¿Hablamos de tu producción?", "Cuéntanos qué necesitas y te proponemos cómo hacerlo, con muestras si lo necesitas.")),
          "en": dict(
             eyebrow="Contract processing · Pontevedra, Spain",
             h1="Specialists in seafood processing",
             lead="We process frozen seafood so our clients can reach consumers with the best product. We adapt to each client’s needs while preserving the quality of their raw material.",
             facts=["We only sell services","IFS Food certified","Since 2011"],
-            alt="Numarsi cutting line with frozen fish portions on the conveyor",
+            alt="Numarsi operator working on the cephalopod line",
             serv=("What we do", "We handle one step of the process or the complete product: from raw material to frozen, packed product."),
             all_serv="See all services",
             why=("What sets us apart", "A service company that complements its clients’ production processes and is part of their value chain."),
-            adapt=("We adapt to every client", "Every client has its own specification, brand and market. We work with your raw material, with the cut and format you need, and we keep your products confidential.",
-                   ["Tailor-made processes, from a single service to the finished product","Packed in the size and format you need","Commercial samples before production","Confidentiality for your products and specifications"]),
+            adapt=("We adapt to every client", "Every client has its own specification, brand and market. We work with your raw material and the cut, weight and format you need, and we keep your products confidential.",
+                   ["Tailor-made processes, from a single service to the finished product","Packed under your brand, in the format you choose","Commercial samples before production","Confidentiality for your products and specifications"]),
             cert=("Certified quality", "Our own Quality Department applies strict checks throughout the production process."),
-            fac=("Our facilities", "Two factories in Pontevedra totalling 3,500 m², with filleting, cephalopod, cutting, IQF freezing and packing lines.", "Discover our facilities"),
+            fac=("Our facilities", "Two factories in Pontevedra totalling 3,500 m², with filleting, cephalopod, cutting, IQF freezing and packing lines.", "See our facilities and videos"),
             cta=("Shall we talk about your production?", "Tell us what you need and we’ll propose how to do it, with samples if required."))}[L]
     facts = "".join(f"<li>{x}</li>" for x in S["facts"])
     adapt_li = "".join(f"<li>{x}</li>" for x in S["adapt"][2])
@@ -201,7 +201,7 @@ def home(c):
   <div class="btns"><a class="btn btn-primary" href="{contact}#formulario">{t["cta_main"]}</a>
   <a class="btn btn-ghost" href="{{P}}assets/{t["catalog_file"]}" download>{c["icon"]("download")}{t["cta_catalog"]}</a></div>
   <ul class="hero-facts">{facts}</ul></div>
- <div class="hero-media">{c["pic"]("linea-corte", S["alt"], "(min-width: 900px) 45vw, 100vw", eager=True)}</div>
+ <div class="hero-media">{c["pic"]("web-linea-calamar", S["alt"], "(min-width: 900px) 45vw, 100vw", eager=True)}</div>
 </div>
 <svg class="hero-wave" viewBox="0 0 1440 48" preserveAspectRatio="none" aria-hidden="true"><path fill="currentColor" d="M0 48h1440V20c-240 26-480 30-720 12S240 4 0 24z"/></svg></section>
 <section class="stats-band"><div class="wrap">{stats(c)}</div></section>
@@ -209,13 +209,13 @@ def home(c):
  <p class="center reveal"><a class="btn btn-ghost" href="{PAGES["services"][L]["file"]}">{S["all_serv"]}</a></p></div></section>
 <section class="section-dark"><div class="wrap"><div class="section-head reveal"><h2>{S["why"][0]}</h2><p>{S["why"][1]}</p></div>{pillars(c)}</div></section>
 <section><div class="wrap split">
- <div class="photo reveal">{c["pic"]("control-calidad", {"es":"Técnica de calidad revisando los registros de control junto a un compañero","en":"Quality technician reviewing control records with a colleague"}[L], "(min-width: 900px) 40vw, 100vw")}</div>
+ <div class="photo reveal">{c["pic"]("web-control", {"es":"Técnica de calidad revisando los registros de control junto a un compañero","en":"Quality technician reviewing control records with a colleague"}[L], "(min-width: 900px) 40vw, 100vw")}</div>
  <div class="reveal"><h2>{S["adapt"][0]}</h2><p>{S["adapt"][1]}</p><ul class="checks">{adapt_li}</ul></div>
 </div></section>
 <section class="section-soft"><div class="wrap"><div class="section-head reveal"><h2>{S["cert"][0]}</h2><p>{S["cert"][1]}</p></div>{certs(c)}</div></section>
 <section><div class="wrap split">
  <div class="reveal"><h2>{S["fac"][0]}</h2><p>{S["fac"][1]}</p><a class="btn btn-ghost" href="{PAGES["facilities"][L]["file"]}">{S["fac"][2]}</a></div>
- <div class="photo reveal">{c["pic"]("planta-aerea", {"es":"Vista aérea de una de las plantas de Numarsi, con placas solares en la cubierta","en":"Aerial view of one of the Numarsi plants, with solar panels on the roof"}[L], "(min-width: 900px) 45vw, 100vw")}</div>
+ <div class="photo reveal">{c["pic"]("web-fachada", {"es":"Fachada de la planta de Numarsi con camiones en los muelles de carga","en":"Numarsi plant façade with lorries at the loading docks"}[L], "(min-width: 900px) 45vw, 100vw")}</div>
 </div></section>
 {cta_band(c, S["cta"][0], S["cta"][1])}'''
 
@@ -224,12 +224,12 @@ def services(c):
     if L == "es":
         h = page_hero("Servicios", "Nos adaptamos a las necesidades de cada cliente", "Manteniendo la calidad de sus materias primas. Puedes contratar cada servicio por separado o combinarlos para recibir tu producto terminado, congelado y envasado.")
         gal = ("Formatos de envasado", "Estas son algunas de las alternativas de envasado que ofrecemos.")
-        ext = ("Servicios adicionales", "Además, ofrecemos otros servicios exclusivos para nuestros clientes.")
+        ext = ("Servicios adicionales", "Servicios exclusivos para nuestros clientes, para cubrir lo que necesites alrededor de la producción.")
         cta = ("¿Qué servicio necesitas?", "Cuéntanos el producto, el proceso y el formato, y te enviamos una propuesta.")
     else:
         h = page_hero("Services", "We adapt to each client’s needs", "While preserving the quality of their raw materials. Book each service separately or combine them to receive your product finished, frozen and packed.")
         gal = ("Packing formats", "These are some of the packing options we offer.")
-        ext = ("Additional services", "We also offer other exclusive services for our clients.")
+        ext = ("Additional services", "Exclusive services for our clients, covering what you need around production.")
         cta = ("Which service do you need?", "Tell us the product, process and format, and we’ll send you a proposal.")
     return f'''{h}
 <section><div class="wrap">{service_blocks(c, full=True)}</div></section>
@@ -242,27 +242,27 @@ def quality(c):
     if L == "es":
         h = page_hero("Calidad", "Una filosofía de calidad en todo el proceso", "Aplicamos altos estándares de calidad y seguridad alimentaria. Nuestro Departamento de Calidad realiza controles rigurosos desde la recepción de la materia prima hasta la expedición.")
         ctrl_h = "Controles en cada etapa"
-        ctrl = [("Recepción","Control de la materia prima a su llegada a la planta."),("Proceso","Controles durante la elaboración de cada producto."),
-                ("Congelación y glaseo","Control de los procesos de congelación y glaseo."),("Producto terminado","Control del producto antes de su expedición.")]
+        ctrl = [("Recepción","Temperatura, lote, documentación y estado de la materia prima."),("Proceso","Pesos, calibres, defectos y tiempos registrados en línea."),
+                ("Congelación y glaseo","Temperatura de núcleo y porcentaje de glaseo."),("Producto terminado","Etiquetado, trazabilidad por lote y liberación por Calidad.")]
         cert_h = ("Certificaciones", "Trabajamos según los estándares que exige la distribución europea.")
-        conf = ("Confidencialidad y transparencia", "Somos totalmente transparentes con nuestros clientes en cuanto a procesos y controles de producción, y mantenemos en privado los detalles y especificaciones de sus productos.")
-        alt = "Técnica de calidad con equipo de protección en la sala de producción"
-        cta = ("¿Quieres saber más sobre nuestra calidad?", "Escríbenos y te informamos.")
+        conf = ("Confidencialidad y transparencia", "Somos totalmente transparentes con nuestros clientes en cuanto a procesos y controles de producción, y mantenemos en privado los detalles y especificaciones de sus productos. Facilitamos los registros y la documentación que necesites para tus auditorías.")
+        alt = "Operaria de Numarsi cerrando una caja de producto terminado"
+        cta = ("¿Necesitas nuestra documentación de calidad?", "Te enviamos certificados y fichas técnicas.")
     else:
         h = page_hero("Quality", "A quality philosophy across the whole process", "We apply high quality and food safety standards. Our Quality Department carries out strict checks from raw material intake to dispatch.")
         ctrl_h = "Checks at every stage"
-        ctrl = [("Intake","Checks on the raw material when it arrives at the plant."),("Processing","Checks while each product is being processed."),
-                ("Freezing and glazing","Control of the freezing and glazing processes."),("Finished product","Checks on the product before dispatch.")]
+        ctrl = [("Intake","Temperature, batch, paperwork and condition of the raw material."),("Processing","Weights, sizes, defects and times recorded on the line."),
+                ("Freezing and glazing","Core temperature and glazing percentage."),("Finished product","Labelling, batch traceability and release by Quality.")]
         cert_h = ("Certifications", "We work to the standards European retail requires.")
-        conf = ("Confidentiality and transparency", "We are fully transparent with our clients about processes and production controls, and keep the details and specifications of their products private.")
-        alt = "Quality technician in protective clothing on the production floor"
-        cta = ("Want to know more about our quality?", "Write to us and we’ll tell you more.")
+        conf = ("Confidentiality and transparency", "We are fully transparent with our clients about processes and production controls, and keep the details and specifications of their products private. We provide the records and documents you need for your audits.")
+        alt = "Numarsi operator closing a box of finished product"
+        cta = ("Need our quality documentation?", "We’ll send you certificates and specification sheets.")
     cl = "".join(f'<li class="reveal"><h3>{a}</h3><p>{b}</p></li>' for a, b in ctrl)
     return f'''{h}
 <section><div class="wrap"><div class="section-head reveal"><h2>{ctrl_h}</h2></div><ol class="steps">{cl}</ol></div></section>
 <section class="section-soft"><div class="wrap"><div class="section-head reveal"><h2>{cert_h[0]}</h2><p>{cert_h[1]}</p></div>{certs(c)}</div></section>
 <section><div class="wrap split">
- <div class="photo reveal">{c["pic"]("equipo-planta", alt, "(min-width: 900px) 40vw, 100vw")}</div>
+ <div class="photo reveal">{c["pic"]("web-embalaje", alt, "(min-width: 900px) 40vw, 100vw")}</div>
  <div class="reveal"><div class="icon">{c["icon"]("lock")}</div><h2>{conf[0]}</h2><p>{conf[1]}</p></div>
 </div></section>
 {cta_band(c, cta[0], cta[1])}'''
@@ -277,7 +277,7 @@ def development(c):
                  ("chart","Proyectos integrales","Proyectos adaptados a cada cliente: pruebas de validación, análisis de datos y escalado a producción.")]
         how_h = "Cómo trabajamos"
         how = [("Necesidad","Nos cuentas el producto, el mercado y el formato que buscas."),("Pruebas","Hacemos ensayos en planta y te enviamos muestras."),
-               ("Validación","Ajustamos con tus comentarios y validamos rendimientos con datos."),("Producción","Pasamos a la producción del producto validado.")]
+               ("Validación","Ajustamos con tus comentarios y validamos rendimientos con datos."),("Producción","Pasamos a producción con la ficha técnica cerrada.")]
         cta = ("¿Tienes un proyecto en mente?", "Cuéntanoslo y empezamos con una primera muestra.")
     else:
         h = page_hero("Product development", "We support you from idea to production", "Our Improvement and Development department advises and supports each client in four areas.")
@@ -287,13 +287,16 @@ def development(c):
                  ("chart","End-to-end projects","Projects adapted to each client: validation trials, data analysis and scale-up to production.")]
         how_h = "How we work"
         how = [("Need","You tell us the product, market and format you’re looking for."),("Trials","We run plant trials and send you samples."),
-               ("Validation","We fine-tune with your feedback and validate yields with data."),("Production","We move the validated product into production.")]
+               ("Validation","We fine-tune with your feedback and validate yields with data."),("Production","We move to production with a closed spec sheet.")]
         cta = ("Got a project in mind?", "Tell us about it and we’ll start with a first sample.")
     it = "".join(f'<article class="card reveal"><div class="icon">{c["icon"](i)}</div><h3>{a}</h3><p>{b}</p></article>' for i, a, b in items)
     hw = "".join(f'<li class="reveal"><h3>{a}</h3><p>{b}</p></li>' for a, b in how)
     return f'''{h}
 <section><div class="wrap"><div class="grid g4">{it}</div></div></section>
-<section class="section-soft"><div class="wrap"><div class="section-head reveal"><h2>{how_h}</h2></div><ol class="steps">{hw}</ol></div></section>
+<section class="section-soft"><div class="wrap split" style="align-items:start">
+ <div><div class="section-head reveal"><h2>{how_h}</h2></div><ol class="steps steps-1">{hw}</ol></div>
+ <div class="photo reveal">{c["pic"]("web-filete-mano", {"es":"Manos con guantes preparando un filete de pescado","en":"Gloved hands preparing a fish fillet"}[L], "(min-width: 900px) 45vw, 100vw")}</div>
+</div></section>
 {cta_band(c, cta[0], cta[1])}'''
 
 def facilities(c):
@@ -301,29 +304,39 @@ def facilities(c):
     if L == "es":
         hh = ("Instalaciones", "Instalaciones pensadas para un servicio de calidad", "Nuestras instalaciones y equipos están pensados para ofrecer servicios de calidad que respondan a las necesidades del consumidor y a las tendencias del mercado.")
         lines_h = "Líneas y equipos"
-        lines = ["Fileteado y pelado de pescado","Línea específica de cefalópodo","Porcionado automático desde bloque","2 túneles de congelación IQF y 2 de secado","Salas refrigeradas para tratamientos y almacenamiento","Líneas de envasado con pesadora multicabezal"]
+        vids_h = ("Numarsi en vídeo", "Un recorrido por nuestras instalaciones y por nuestros procesos de producción.")
+        vids = [("Nuestras instalaciones","Vídeo de las instalaciones de Numarsi: líneas de producción, fachada y vista aérea","22 s"),
+                ("Producción","Vídeo de la producción de Numarsi: pesado, embolsado, corte, envasado en barquetas y cámara frigorífica","21 s")]
+        lines = ["Línea de fileteado y pelado","Línea específica de cefalópodo","Porcionado automático desde bloque","2 túneles de congelación IQF y 2 de secado","Salas refrigeradas y cámaras de conservación","Líneas de envasado con pesadora multicabezal"]
         gal_h = "Un recorrido por la planta"
-        gal = [("linea-corte","Línea de porcionado a partir de bloque congelado","Porciones de pescado congelado saliendo de la línea de corte"),
+        gal = [("web-porcionado","Línea de porcionado","Operaria junto a la máquina de porcionado con producto sobre la cinta"),
+               ("web-sierras","Línea de corte con sierras","Línea de corte con sierras y porciones de pescado"),
+               ("web-linea-calamar","Línea de cefalópodo","Operarias en la línea de limpieza de cefalópodo"),
+               ("web-iqf","Túnel de congelación IQF","Producto sobre la malla del túnel de congelación IQF"),
                ("linea-envasado","Línea de envasado","Línea de envasado con pesadora multicabezal y operarias"),
-               ("puestos-limpieza","Puestos de preparación","Operarias trabajando en puestos individuales de la línea de preparación"),
+               ("web-embalaje","Embalaje del producto terminado","Operaria cerrando una caja de producto terminado"),
                ("planta-aerea","Vista aérea de la planta","Vista aérea de la nave con placas solares en la cubierta"),
-               ("fachada-muelles","Muelles de carga","Fachada de la planta con camiones frigoríficos en los muelles"),
-               ("cartel-numarsi","Entrada a la planta","Cartel con el logotipo de Numarsi en la entrada de la planta")]
+               ("web-fachada","Muelles de carga","Fachada de la planta con camiones frigoríficos en los muelles")]
         vid = ("Vídeo de la planta de Numarsi: fachada, vista aérea y cartel de entrada", "Pausar vídeo", "Reproducir vídeo")
-        cta = ("¿Hablamos de tu producción?", "Cuéntanos qué necesitas y te proponemos cómo hacerlo.")
+        cta = ("Ven a conocernos", "Organizamos visitas a planta para clientes. Escríbenos y buscamos fecha.")
     else:
         hh = ("Facilities", "Facilities designed for quality service", "Our facilities and equipment are designed to deliver quality services that meet consumer needs and market trends.")
         lines_h = "Lines and equipment"
-        lines = ["Filleting and skinning line","Dedicated cephalopod line","Automatic portioning from blocks","2 IQF freezing tunnels and 2 drying tunnels","Chilled rooms for treatments and storage","Packing lines with multihead weigher"]
+        vids_h = ("Numarsi on video", "A tour of our facilities and our production processes.")
+        vids = [("Our facilities","Video of the Numarsi facilities: production lines, façade and aerial view","22 s"),
+                ("Production","Video of Numarsi production: weighing, bagging, cutting, tray packing and cold store","21 s")]
+        lines = ["Filleting and skinning line","Dedicated cephalopod line","Automatic portioning from blocks","2 IQF freezing tunnels and 2 drying tunnels","Chilled rooms and cold stores","Packing lines with multihead weigher"]
         gal_h = "A tour of the plant"
-        gal = [("linea-corte","Portioning line for frozen blocks","Frozen fish portions coming off the cutting line"),
+        gal = [("web-porcionado","Portioning line","Operator next to the portioning machine with product on the belt"),
+               ("web-sierras","Band saw cutting line","Cutting line with band saws and fish portions"),
+               ("web-linea-calamar","Cephalopod line","Operators on the cephalopod cleaning line"),
+               ("web-iqf","IQF freezing tunnel","Product on the mesh belt of the IQF freezing tunnel"),
                ("linea-envasado","Packing line","Packing line with a multihead weigher and operators"),
-               ("puestos-limpieza","Preparation stations","Operators working at individual stations on the preparation line"),
+               ("web-embalaje","Packing finished product","Operator closing a box of finished product"),
                ("planta-aerea","Aerial view of the plant","Aerial view of the building with solar panels on the roof"),
-               ("fachada-muelles","Loading docks","Plant façade with refrigerated lorries at the loading docks"),
-               ("cartel-numarsi","Plant entrance","Sign with the Numarsi logo at the plant entrance")]
+               ("web-fachada","Loading docks","Plant façade with refrigerated lorries at the loading docks")]
         vid = ("Video of the Numarsi plant: façade, aerial view and entrance sign", "Pause video", "Play video")
-        cta = ("Shall we talk about your production?", "Tell us what you need and we’ll propose how to do it.")
+        cta = ("Come and visit us", "We organise plant visits for clients. Write to us to arrange a date.")
     ln = "".join(f"<li>{x}</li>" for x in lines)
     gl = "".join(f'<figure class="reveal"><div class="photo">{c["pic"](n, alt, "(min-width: 700px) 50vw, 100vw")}</div><figcaption>{cap}</figcaption></figure>' for n, cap, alt in gal)
     return f'''<section class="page-hero has-video on-dark">
@@ -335,6 +348,11 @@ def facilities(c):
 </section>
 <section class="stats-band"><div class="wrap">{stats(c)}</div></section>
 <section><div class="wrap"><div class="section-head reveal"><h2>{lines_h}</h2></div><ul class="chips">{ln}</ul></div></section>
+<section class="section-dark" id="videos"><div class="wrap"><div class="section-head reveal"><h2>{vids_h[0]}</h2><p>{vids_h[1]}</p></div>
+ <div class="grid g2">
+  <figure class="video-card reveal"><video controls preload="none" playsinline poster="{{P}}assets/video/numarsi-instalaciones-completo-poster.webp" aria-label="{vids[0][1]}"><source src="{{P}}assets/video/numarsi-instalaciones-completo.mp4" type="video/mp4"></video><figcaption><strong>{vids[0][0]}</strong> · {vids[0][2]}</figcaption></figure>
+  <figure class="video-card reveal"><video controls preload="none" playsinline poster="{{P}}assets/video/numarsi-produccion-poster.webp" aria-label="{vids[1][1]}"><source src="{{P}}assets/video/numarsi-produccion.mp4" type="video/mp4"></video><figcaption><strong>{vids[1][0]}</strong> · {vids[1][2]}</figcaption></figure>
+ </div></div></section>
 <section class="section-soft"><div class="wrap"><div class="section-head reveal"><h2>{gal_h}</h2></div><div class="gallery">{gl}</div></div></section>
 {cta_band(c, cta[0], cta[1])}'''
 
@@ -350,7 +368,7 @@ def about(c):
                 ("lock","Confidencialidad","Mantenemos en privado los detalles y especificaciones de los productos de nuestros clientes."),
                 ("chart","Transparencia","Somos totalmente transparentes en cuanto a procesos y controles de producción."),
                 ("clock","Especialización y fiabilidad","Ser especialistas nos permite actuar con rapidez y entregar en el plazo acordado.")]
-        alt = "Operarios con equipo de protección trabajando en la línea de producción"
+        alt = "Operaria de Numarsi en la línea de producción"
         cta = ("Hablemos de tu producción", "Cuéntanos qué necesitas y te proponemos cómo hacerlo.")
     else:
         h = page_hero("About us", "A service company at its clients’ service", "Numarsi was founded in 2011 to meet the need of many fish processors and distributors to outsource part of their production processes.")
@@ -362,7 +380,7 @@ def about(c):
                 ("lock","Confidentiality","We keep the details and specifications of our clients’ products private."),
                 ("chart","Transparency","We are fully transparent about processes and production controls."),
                 ("clock","Specialisation and reliability","Being specialists lets us act quickly and deliver on the agreed date.")]
-        alt = "Operators in protective clothing working on the production line"
+        alt = "Numarsi operator on the production line"
         cta = ("Let’s talk about your production", "Tell us what you need and we’ll propose how to do it.")
     vl = "".join(f'<article class="card reveal"><div class="icon">{c["icon"](i)}</div><h3>{a}</h3><p>{b}</p></article>' for i, a, b in vals)
     return f'''{h}
@@ -379,7 +397,7 @@ def contact(c):
     if L == "es":
         h = page_hero("Contacto", "Hablemos de tu producción", "Escríbenos o rellena el formulario para pedir información, un presupuesto o muestras. Te respondemos lo antes posible.")
         F = dict(title="Solicitud de información", empresa="Empresa", nombre="Nombre y apellidos", email="Correo electrónico", tel="Teléfono",
-                 motivo="Motivo", motivos=["Información general","Presupuesto","Solicitud de muestras","Otro"], elige="Elige una opción",
+                 motivo="Motivo", motivos=["Información general","Presupuesto","Solicitud de muestras","Visita a planta","Otro"], elige="Elige una opción",
                  servicio="Servicio de interés", servicios=["Fileteado y pelado","Cefalópodos","Corte","Congelación IQF","Envasado","Varios / producto completo"],
                  producto="Producto", producto_ph="Ej.: merluza, calamar, pota…", volumen="Volumen aproximado", volumen_ph="Ej.: 20 t al año",
                  msg="Mensaje", legal="He leído y acepto la política de privacidad.", send="Enviar solicitud",
@@ -388,7 +406,7 @@ def contact(c):
     else:
         h = page_hero("Contact", "Let’s talk about your production", "Write to us or fill in the form to ask for information, a quote or samples. We’ll get back to you as soon as possible.")
         F = dict(title="Information request", empresa="Company", nombre="Full name", email="Email", tel="Phone",
-                 motivo="Reason", motivos=["General information","Quote","Sample request","Other"], elige="Choose an option",
+                 motivo="Reason", motivos=["General information","Quote","Sample request","Plant visit","Other"], elige="Choose an option",
                  servicio="Service of interest", servicios=["Filleting and skinning","Cephalopods","Cutting","IQF freezing","Packing","Several / complete product"],
                  producto="Product", producto_ph="E.g. hake, squid, jumbo squid…", volumen="Approximate volume", volumen_ph="E.g. 20 t per year",
                  msg="Message", legal="I have read and accept the privacy policy.", send="Send request",
@@ -437,7 +455,7 @@ def contact(c):
   <div class="btns" style="margin-top:8px"><a class="btn btn-ghost btn-sm" href="{MAPS}" rel="noopener">{c["icon"]("pin")}{info[5]}</a>
   <a class="btn btn-ghost btn-sm" href="{{P}}assets/{t["catalog_file"]}" download>{c["icon"]("download")}{t["cta_catalog"]}</a></div>
  </div>
- <div class="photo" style="margin-top:24px">{c["pic"]("fachada-muelles", {"es":"Fachada de la planta de Numarsi con camiones en los muelles de carga","en":"Numarsi plant façade with lorries at the loading docks"}[L], "(min-width: 900px) 45vw, 100vw")}</div>
+ <div class="photo" style="margin-top:24px">{c["pic"]("web-edificio", {"es":"Edificio de oficinas de Numarsi en Pontevedra","en":"Numarsi office building in Pontevedra"}[L], "(min-width: 900px) 45vw, 100vw")}</div>
 </div>
 </div></section>'''
 
@@ -452,7 +470,7 @@ def legal(c):
 <p>Puedes ejercer tus derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad escribiendo a info@numarsi.com, y reclamar ante la Agencia Española de Protección de Datos.</p>
 <p>El formulario de contacto de esta web no guarda datos: prepara un correo en tu propio programa de correo y tú decides si lo envías.</p>
 <h2 id="cookies">Política de cookies</h2><p>Esta web no utiliza cookies propias ni de terceros con fines publicitarios o de análisis. Por eso no necesitas aceptar ningún aviso para navegar.</p>
-<h2 id="canal-etico">Canal Ético</h2><p>Numarsi dispone de un Canal Ético para comunicar de forma confidencial cualquier posible irregularidad. Las comunicaciones se tratan con total confidencialidad y sin represalias.</p>
+<h2 id="canal-etico">Canal Ético</h2><p>Numarsi dispone de un Canal Ético, conforme a la Ley 2/2023, para comunicar de forma confidencial cualquier posible irregularidad. Las comunicaciones se tratan con total confidencialidad y sin represalias.</p>
 </div></section>'''
     return page_hero("Legal information", "Legal notice, privacy, cookies and ethics channel", "Information about the website owner and how your data is handled.") + f'''
 <section><div class="wrap prose">
@@ -462,7 +480,7 @@ def legal(c):
 <p>You can exercise your rights of access, rectification, erasure, objection, restriction and portability by writing to info@numarsi.com, and complain to the Spanish Data Protection Agency.</p>
 <p>The contact form on this website does not store data: it prepares an email in your own email app and you decide whether to send it.</p>
 <h2 id="cookies">Cookie policy</h2><p>This website does not use first- or third-party cookies for advertising or analytics, so you don’t need to accept any banner to browse.</p>
-<h2 id="canal-etico">Ethics channel</h2><p>Numarsi has an ethics channel to report any possible irregularity confidentially. Reports are handled in full confidence and without retaliation.</p>
+<h2 id="canal-etico">Ethics channel</h2><p>Numarsi has an ethics channel, in line with Spanish Law 2/2023, to report any possible irregularity confidentially. Reports are handled in full confidence and without retaliation.</p>
 </div></section>'''
 
 PAGES = {
