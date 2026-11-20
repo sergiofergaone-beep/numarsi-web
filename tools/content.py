@@ -403,7 +403,7 @@ def contact(c):
     legal_txt = F["legal"].replace(pol, f'<a href="{legal}#privacidad">{pol}</a>')
     return f'''{h}
 <section id="formulario"><div class="wrap split" style="align-items:start">
-<form class="form reveal" id="sample-form" action="mailto:{t["email"]}" method="post" enctype="text/plain"
+<form class="form reveal" id="sample-form"
   data-to="{t["email"]}" data-subject="{F["subject"]}" data-ok="{H.escape(F["ok"])}" data-labels='{H.escape(labels)}'>
  <h2>{F["title"]}</h2>
  <div class="row">
@@ -426,6 +426,7 @@ def contact(c):
  <div class="field"><label class="check"><input type="checkbox" required> <span>{legal_txt} {r}</span></label></div>
  <button class="btn btn-primary" type="submit">{c["icon"]("mail")}{F["send"]}</button>
  <p class="form-msg" id="form-msg" role="status" aria-live="polite"></p>
+ <noscript><p class="fine">{ {"es":"Si el formulario no funciona en tu navegador, escríbenos a","en":"If the form doesn’t work in your browser, write to"}[L] } <a href="mailto:{t["email"]}">{t["email"]}</a>.</p></noscript>
 </form>
 <div class="reveal">
  <div class="contact-box"><h2>{info[0]}</h2><dl>
